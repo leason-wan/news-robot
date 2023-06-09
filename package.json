@@ -1,0 +1,29 @@
+{
+  "name": "prompt-engineering-for-developers-chinese",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esno ./src/index.ts",
+    "start": "node ./build/index.mjs",
+    "build": "pnpm clean && tsup",
+    "clean": "rimraf build && rimraf public",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.24.0",
+    "crawlee": "^3.3.3",
+    "dayjs": "^1.11.8",
+    "dotenv": "^16.0.3",
+    "esno": "^0.16.3",
+    "langchain": "0.0.73",
+    "octokit": "^2.0.19",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.34.3",
+    "srt-parser-2": "^1.2.3",
+    "subtitle": "^4.2.1"
+  }
+}
